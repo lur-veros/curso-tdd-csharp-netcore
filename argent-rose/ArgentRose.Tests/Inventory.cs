@@ -5,7 +5,14 @@ namespace ArgentRose.Tests;
 
 internal class Inventory
 {
-    internal List<Product> Update(List<Product> products)
+    private List<Product> products;
+
+    public Inventory(List<Product> products)
+    {
+        this.products = products;
+    }
+
+    internal List<Product> Update()
     {
         return products;
     }

@@ -49,11 +49,24 @@ namespace ArgentRose.Tests
         [Test]
         public void When_EmptyInventory_Then_Return_EmptyInventory()
         {
-            Inventory inventory = new Inventory();
+            Inventory inventory = new Inventory(new List<Product>());
 
-            List<Product> updatedInventory = inventory.Update(new List<Product>());
+            List<Product> updatedInventory = inventory.Update();
 
             Assert.That(updatedInventory, Is.Empty);
         }
+
+        //[Test]
+        //public void When_Inventory_HasOneProduct_And_Sellin_Is_Higher_Than6_Returns_QualityIncrease1()
+        //{
+        //    // [{sellin: 7, quality: 3, description: "Theatre Passes"}] 
+        //    //-> [{sellin: 6, quality: 4, description: "Theatre Passes"}]
+
+        //    Inventory inventory = new Inventory();
+
+        //    List<Product> updatedInventory = inventory.Update(new List<Product>());
+
+        //    Assert.That(updatedInventory, Is.Empty);
+        //}
     }
 }

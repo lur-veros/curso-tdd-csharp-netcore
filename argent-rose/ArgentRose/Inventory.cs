@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace ArgentRose.Tests;
 
-internal class Inventory
+public class Inventory
 {
     private List<Product> products;
 
@@ -12,7 +11,7 @@ internal class Inventory
         this.products = products;
     }
 
-    internal List<Product> Update()
+    public List<Product> Update()
     {
         return products;
     }

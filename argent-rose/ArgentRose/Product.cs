@@ -1,5 +1,5 @@
 ﻿namespace ArgentRose.Tests;
 
-internal class Product
+public class Product
 {
 }

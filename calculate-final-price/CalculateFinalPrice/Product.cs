@@ -12,10 +12,10 @@ public class Product
         if (Tax == 0)
             return Cost;
 
-        return (Cost + CalculateTax());
+        return (Cost + ApplyTax());
     }
 
-    private double CalculateTax()
+    private double ApplyTax()
     {
         return (Cost * Tax / 100);
     }

@@ -12,6 +12,6 @@ public class Product
         if (Tax == 0)
             return Cost;
 
-        return 20.00;
+        return (Cost + (Cost * Tax/100));
     }
 }

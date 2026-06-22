@@ -19,4 +19,20 @@ public class CalculateFinalPriceTest
 
         Assert.That(finalPrice, Is.EqualTo(cost).Within(0.0001));
     }
+
+    //[] product(cost:0.00eur, tax:10%) => finalPrice:0.00eur
+
+    [Test]
+    public void When_Tax_Greater_Than_Zero_Apply_Tax_To_Cost()
+    {
+        Product product = new Product
+        {
+            Cost = 0.00,
+            Tax = 10
+        };
+
+        double finalPrice = product.CalculateFinalPrice();
+
+        Assert.That(finalPrice, Is.EqualTo(0.00).Within(0.0001));
+    }
 }

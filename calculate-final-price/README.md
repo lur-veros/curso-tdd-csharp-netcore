@@ -24,7 +24,7 @@ Smaller Behaviors:
 * Rounded
 
 Examples:
-[] product(cost:100.00eur, tax:50%) => finalPrice:150.00eur
+[X] product(cost:100.00eur, tax:50%) => finalPrice:150.00eur
 [X] product(cost:0.00eur, tax:0%) => finalPrice:0.00eur
 [X] product(cost:0.00eur, tax:10%) => finalPrice:0.00eur
 [X] product(cost:20.00eur, tax:0%) => finalPrice:20.00eur

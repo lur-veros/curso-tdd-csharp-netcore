@@ -25,8 +25,8 @@ Smaller Behaviors:
 
 Examples:
 [] product(cost:100.00eur, tax:50%) => finalPrice:150.00eur
-[] product(cost:0.00eur, tax:0%) => finalPrice:0.00eur
+[X] product(cost:0.00eur, tax:0%) => finalPrice:0.00eur
 [] product(cost:0.00eur, tax:10%) => finalPrice:0.00eur
-[] product(cost:20.00eur, tax:0%) => finalPrice:20.00eur
+[X] product(cost:20.00eur, tax:0%) => finalPrice:20.00eur
 [] product(cost:1.89eur, tax:0%) => finalPrice:1.89eur
 [] product(cost:23.47eur, tax:21%) => finalPrice:28.40eur

@@ -9,8 +9,8 @@ public class Product
 
     public double CalculateFinalPrice()
     {
-        if (Cost  == 0)
-            return 0.00;
+        if (Tax == 0)
+            return Cost;
 
         return 20.00;
     }
